@@ -1,0 +1,8 @@
+src/
+max/
+coverage/
+.github/
+.vscode/
+vitest.config.ts
+*.test.js
+*.test.cjs

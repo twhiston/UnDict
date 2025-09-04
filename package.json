@@ -1,0 +1,30 @@
+{
+  "name": "undict",
+  "version": "1.0.0",
+  "description": "Make a max dict a lovely normal JS object so it's not such a horror show to traverse",
+  "keywords": [
+    "cycling74",
+    "max"
+  ],
+  "homepage": "https://github.com/twhiston/UnDict#readme",
+  "bugs": {
+    "url": "https://github.com/twhiston/UnDict/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/twhiston/UnDict.git"
+  },
+  "license": "MIT",
+  "author": "Tom Whiston",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run --coverage",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.4",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
