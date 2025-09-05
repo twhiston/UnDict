@@ -1,6 +1,6 @@
 {
   "name": "@twhiston/undict",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Make a max dict a lovely normal JS object so it's not such a horror show to traverse",
   "keywords": [
     "cycling74",
