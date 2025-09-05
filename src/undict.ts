@@ -108,16 +108,16 @@ export type { MaxDict, JavaScriptObject };
 /*
 // Example 1: Using the class method
 const myDict = new Dict("myData");
-const jsObject = DictConverter.toObject(myDict);
+const jsObject = UnDict.toObject(myDict);
 
 // Example 2: Using the utility function
 const jsObject2 = dictToObject(myDict);
 
 // Example 3: Using JSON method (faster for large dicts)
-const jsObject3 = DictConverter.toObjectViaJSON(myDict);
+const jsObject3 = UnDict.toObjectViaJSON(myDict);
 
 // Example 4: Safe conversion with error handling
-const jsObject4 = DictConverter.safeConvert(myDict, true);
+const jsObject4 = UnDict.safeConvert(myDict, true);
 if (jsObject4) {
   // Successfully converted
   console.log(jsObject4);

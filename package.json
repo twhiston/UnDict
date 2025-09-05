@@ -1,5 +1,5 @@
 {
-  "name": "undict",
+  "name": "@twhiston/undict",
   "version": "1.0.0",
   "description": "Make a max dict a lovely normal JS object so it's not such a horror show to traverse",
   "keywords": [
@@ -17,7 +17,7 @@
   "license": "MIT",
   "author": "Tom Whiston",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/UnDict.js",
   "scripts": {
     "test": "vitest run --coverage",
     "build": "tsc"

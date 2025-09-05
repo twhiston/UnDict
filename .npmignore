@@ -3,6 +3,7 @@ max/
 coverage/
 .github/
 .vscode/
+test/
 vitest.config.ts
 *.test.js
 *.test.cjs

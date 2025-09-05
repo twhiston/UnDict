@@ -14,7 +14,19 @@
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"code" : "const undict = require(\"undict\")\r\n\r\nconst dict = new Dict(\"testdata\")\r\nconst lush = undict.dictToObject(dict)\r\n\r\npost(JSON.stringify(lush))",
+					"id" : "obj-4",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 375.0, 34.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "const undict = require(\"undict\")\r\n\r\nconst dict = new Dict(\"testdata\")\r\n\r\nfunction bang(){\r\n\tconst lush = undict.dictToObject(dict)\r\n\tpost(JSON.stringify(lush))\r\n\tpost()\r\n\tpost(lush.cringle, lush.nest.chongus.mingus)\r\n}",
 					"filename" : "none",
 					"fontface" : 0,
 					"fontname" : "<Monospaced>",
@@ -24,7 +36,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 630.0, 242.0, 340.0, 200.0 ],
+					"patching_rect" : [ 375.0, 84.0, 340.0, 200.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -43,7 +55,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 5,
 					"outlettype" : [ "dictionary", "", "", "", "" ],
-					"patching_rect" : [ 268.0, 242.0, 340.0, 200.0 ],
+					"patching_rect" : [ 13.0, 84.0, 340.0, 200.0 ],
 					"saved_object_attributes" : 					{
 						"legacy" : 0,
 						"name" : "testdata",
@@ -55,9 +67,16 @@
 
 			}
  ],
-		"lines" : [  ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+ ],
 		"dependency_cache" : [ 			{
-				"name" : "undict.js",
+				"name" : "UnDict.js",
 				"bootpath" : "~/Code/undict/dist",
 				"patcherrelativepath" : "../dist",
 				"type" : "TEXT",
